@@ -13,6 +13,7 @@ class ProductController extends Controller
     {
         #request input for id
         $id = $request->input('id');
+        /* Getting the limit from the request. */
         $limit = $request->input('limit');
         #input name
         $name = $request->input('name');

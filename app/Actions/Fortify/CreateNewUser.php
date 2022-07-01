@@ -18,6 +18,14 @@ class CreateNewUser implements CreatesNewUsers
      * @param  array  $input
      * @return \App\Models\User
      */
+
+    /**
+     * The function creates a new user with the name, email, and password provided in the  array
+     * 
+     * @param array input The input data that was submitted by the user.
+     * 
+     * @return A new user is being created.
+     */
     public function create(array $input)
     {
         Validator::make($input, [
